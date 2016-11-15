@@ -7,7 +7,10 @@
 
 	<h1>Olha, um titulo!!</h1>
 	<p>E um paragrafo!!</p>
-<?php echo $_GET['Lat2'] . ' ' . $_GET['Lon2']; ?>
+<?php
+	echo $_POST['Lat2'];
+		
+?>
 	<div style="width:800px;max-width:100%;overflow:hidden;height:800px;">
 			<div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
 				<iframe style="height:100%;width:100%;border:0;" frameborder="0" 

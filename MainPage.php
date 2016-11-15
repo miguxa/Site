@@ -9,7 +9,7 @@
 	</head>
 	<body>
 
-		<h1>This is a Heading</h1>
+		<!--<h1>This is a Heading</h1>
 		<p>This is a paragraph.</p>
 	
 		<div class="container"> 
@@ -23,6 +23,7 @@
 						  <label>Longitude:</label>
 						  North <input type="radio" name="Lon1" value="North">
 						  South <input type="radio" name="Lon1" value="South">
+						  <input class="form-control" type="text" title="Lon1" name="Lon1" value="" placeholder="Longitude1"/>
 						  <input class="form-control" type="text" title="Lon2" name="Lon2" value="" placeholder="Longitude2"/>
 						</div>
 					  </li>
@@ -30,28 +31,29 @@
 						<div class="form-group has-feedback"> 
 						  <label>Latitude:</label>
 						  <input class="form-control" type="text" title="Lat1" name="Lat1" value="" placeholder="Latitude1"/>
-						 </div>
+						  <input class="form-control" type="text" title="Lat2" name="Lat2" value="" placeholder="Latitude2"/>
+						  </div>
 					   </li>
 						 <input type="submit" class="btn btn-primary" value="Submit">  
 					</ul>
 				 </form>
 			  </div>	
 			</div>
-		</div>
+		</div>-->
 	
-	
-	
-		<form action="SecondPage.php">
+		<form action="SecondPage.php" method="POST">
 			Coordenadas <br>
 			<input type="radio" name="Lat1" value="North">North
 			<input type="radio" name="Lat1" value="South">South
-			<input type="number" name="Lat2" value="38.6608" placeholder="38" style="width: 80px" step="0.00001" min="0" max="90">
+			<input type="number" name="Lat2" placeholder="38" style="width: 80px" step="0.00001" min="0" max="90">
+			<input type="number" name="Lat3" placeholder="6608" style="width: 80px" step="0.00001" min="0" max="90">
 			<br>
 			<input type="radio" name="Lon1" value="East">East &nbsp 
 			<input type="radio" name="Lon1" value="West">West &nbsp
-			<input type="number" name="Lon2" value="-9.2049" placeholder="009" style="width: 80px" step="0.00001" min="-180" max="180">
+			<input type="number" name="Lon2" placeholder="9" style="width: 80px" step="0.00001" min="-180" max="180">
+			<input type="number" name="Lon3" placeholder="2049" style="width: 80px" step="0.00001" min="-180" max="180">
 			<br><br>
-			<button type="submit" method="POST">
+			<button type="submit">
 				Click Here!!
 			</button>
 		</form>
