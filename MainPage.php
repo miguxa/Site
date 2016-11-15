@@ -3,61 +3,47 @@
 	<head>
 		<title>Miguel Prego</title>
 		<link rel="icon" href="demo_icon.png" type="image/gif" sizes="16x16">
-		
-		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	</head>
-	<body>
-
-		<!--<h1>This is a Heading</h1>
-		<p>This is a paragraph.</p>
 	
+	<body>
 		<div class="container"> 
 			<div class="row">
-			  <div class="col-md-4 col-md-offset-1">
-				 <h3>Log into your account</h3>
-				 <form role="form" method="post" action="Third.php?Lon=1" name="lon">
+				<h3>Please enter coordinates</h3>
+				<form role="form" method="post" action="SecondPage.php">
 					<ul style="width: 360px; list-style-type:none"> 
-					  <li style="width: 340px">
-						<div class="form-group has-feedback">
-						  <label>Longitude:</label>
-						  North <input type="radio" name="Lon1" value="North">
-						  South <input type="radio" name="Lon1" value="South">
-						  <input class="form-control" type="text" title="Lon1" name="Lon1" value="" placeholder="Longitude1"/>
-						  <input class="form-control" type="text" title="Lon2" name="Lon2" value="" placeholder="Longitude2"/>
-						</div>
-					  </li>
-					  <li style="width: 340px">
-						<div class="form-group has-feedback"> 
-						  <label>Latitude:</label>
-						  <input class="form-control" type="text" title="Lat1" name="Lat1" value="" placeholder="Latitude1"/>
-						  <input class="form-control" type="text" title="Lat2" name="Lat2" value="" placeholder="Latitude2"/>
-						  </div>
-					   </li>
-						 <input type="submit" class="btn btn-primary" value="Submit">  
+						<li style="width: 340px">
+							<div class="form-group has-feedback">
+								<label>Longitude:</label>
+								<br>
+								North <input type="radio" name="Lat1" value="North" checked="checked">
+								South <input type="radio" name="Lat1" value="South">
+								<br>
+								<input class="element text" placeholder="38"   size="3" type="text" name="Lat2" value=""/>
+								<input class="element text" placeholder="6608" size="5" type="text" name="Lat3" value=""/>
+							</div>
+						</li>
+						<li style="width: 340px">
+							<div class="form-group has-feedback"> 
+								<label>Latitude:</label>
+								<br>
+								East <input type="radio" name="Lon1" value="East">
+								West <input type="radio" name="Lon1" value="West" checked="checked">
+								<br>
+								<input class="element text" placeholder="9"    size="3" type="text" name="Lon2" value=""/>
+								<input class="element text" placeholder="2049" size="5" type="text" name="Lon3" value=""/>
+							</div>
+						</li>
+						<input type="submit" class="btn btn-primary" value="Submit">
 					</ul>
-				 </form>
-			  </div>	
+				</form>
+				<form>
+					<input type="submit" class="btn btn-primary" value="Casa">
+					<input type="submit" class="btn btn-primary" value="FCT">
+				</form>
 			</div>
-		</div>-->
+		</div>
 	
-		<form action="SecondPage.php" method="POST">
-			Coordenadas <br>
-			<input type="radio" name="Lat1" value="North">North
-			<input type="radio" name="Lat1" value="South">South
-			<input type="number" name="Lat2" placeholder="38" style="width: 80px" step="0.00001" min="0" max="90">
-			<input type="number" name="Lat3" placeholder="6608" style="width: 80px" step="0.00001" min="0" max="90">
-			<br>
-			<input type="radio" name="Lon1" value="East">East &nbsp 
-			<input type="radio" name="Lon1" value="West">West &nbsp
-			<input type="number" name="Lon2" placeholder="9" style="width: 80px" step="0.00001" min="-180" max="180">
-			<input type="number" name="Lon3" placeholder="2049" style="width: 80px" step="0.00001" min="-180" max="180">
-			<br><br>
-			<button type="submit">
-				Click Here!!
-			</button>
-		</form>
-		
 		<!-- <img src="Mapa_FCT.PNG" alt="O Mapa" style="width: 50%; height: 50%"> -->
 		
 		<br><br><br>
@@ -70,7 +56,8 @@
 			</div>
 			<a class="embedded-map-code" rel="nofollow" href="http://www.szablonypremium.pl" id="get-data-for-embed-map">szablonypremium.pl</a>
 			<style>#embedded-map-display img{max-width:none!important;background:none!important;}</style>
-		</div>	
+		</div>
+		
 	</body>
 </html>
 
