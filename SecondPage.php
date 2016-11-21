@@ -8,18 +8,50 @@
 	<h1>Olha, um titulo!!</h1>
 	<p>E um paragrafo!!</p>
 	<?php
-		$Lat1 = $_POST['Lat1'];
-		$Lat2 = $_POST['Lat2'];
-		$Lat3 = $_POST['Lat3'];
-		$Lon1 = $_POST['Lon1'];
-		$Lon2 = $_POST['Lon2'];
-		$Lon3 = $_POST['Lon3'];
+		$Val = $_POST['val'];
 		
-		if ($Lat1 == 'South')
-			$Lat2 = $Lat2 * -1;
+		if($Val == 'Casa') {
+			$Lat2 = 38;
+			$Lat3 = 7189;
+			$Lon2 = -9;
+			$Lon3 = 3317;
+		}
 		
-		if ($Lon1 == 'West')
-			$Lon2 = $Lon2 * -1;
+		else if($Val == 'FCT') {
+			$Lat2 = 38;
+			$Lat3 = 6608;
+			$Lon2 = -9;
+			$Lon3 = 2049;
+		}
+		
+		else {
+			$Lat1 = $_POST['Lat1'];
+			$Lat2 = $_POST['Lat2'];
+			$Lat3 = $_POST['Lat3'];
+			$Lon1 = $_POST['Lon1'];
+			$Lon2 = $_POST['Lon2'];
+			$Lon3 = $_POST['Lon3'];
+			
+			if ($Lat1 == 'South')
+				$Lat2 = $Lat2 * -1;
+			
+			if ($Lon1 == 'West')
+				$Lon2 = $Lon2 * -1;
+		}
+		
+		$port = "COM4";
+  
+		// Configura velocidade de comunicação com a porta serial
+		//exec("MODE $port BAUD=9600 PARITY=n DATA=8 XON=on STOP=1");
+		  
+		// Inicia comunicação serial
+		$fp = fopen($port, 'w+');
+		  
+		// Escreve na porta
+		//fwrite($fp, "LED1:1");
+		  
+		// Fecha a comunicação serial
+		//fclose($fp);
 	?>
 	<div style="width:800px;max-width:100%;overflow:hidden;height:800px;">
 			<div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
