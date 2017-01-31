@@ -9,7 +9,7 @@
 	<body>
 		<h1>Experimental web site</h1>
 		<h3>Please enter coordinates</h3>
-		<form role="form" method="post" action="SecondPage.php">
+		<form role="form" method="post" action="store.php">
 			<ul style="width: 30%"> 
 				<li style="width: 340px">
 					<div class="form-group has-feedback">
@@ -34,8 +34,6 @@
 					</div>
 				</li>
 				<input type="submit" class="btn btn-primary" name="val" value="Submit">
-				<input type="submit" class="btn btn-primary" name="val" value="Casa">
-				<input type="submit" class="btn btn-primary" name="val" value="FCT">
 			</ul>
 		</form>
 	
