@@ -19,8 +19,9 @@
 		$connect = mysqli_connect('localhost', 'root', '') or die('Não foi possível conectar: ' . mysql_error());
 		mysqli_select_db($connect, 'tese') or die('Não foi possível seleccionar o banco da dados');
 		
-
-		$query = 'INSERT INTO coordenadas (latitude, longitude) VALUES (\''.$Lat.'\',\''.$Lon.'\')';
+		
+		$date = date("Y-m-d H:i:s");
+		$query = 'INSERT INTO coordenadas (latitude, longitude, data) VALUES (\''.$Lat.'\',\''.$Lon.'\',\''.$date.'\')';
 		$result = mysqli_query ($connect, $query) or die('A consulta falhou 2!: ' . mysqli_error($connect));
 		if($result === TRUE){
 			echo"Coordenada registada com sucesso!";
