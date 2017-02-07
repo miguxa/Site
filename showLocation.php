@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Page Title</title>
+		<title>Show Locations</title>
+		<link rel="icon" href="SSS.png" type="image/gif" sizes="16x16">
 	</head>
 	<body>
 	<?php	

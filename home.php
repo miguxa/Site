@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<title>Miguel Prego</title>
-		<link rel="icon" href="demo_icon.png" type="image/gif" sizes="16x16">
+		<link rel="icon" href="SSS.png" type="image/gif" sizes="16x16">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	</head>
 	
 	<body>
-		<h1>Experimental web site</h1>
+		<h1>Smart Shock	web site</h1>
+		<img src="SSS.png" style="width:200px;height:200px;">
 		<h3>Please enter coordinates</h3>
 		<form role="form" method="post" action="store.php">
 			<ul style="width: 30%"> 
