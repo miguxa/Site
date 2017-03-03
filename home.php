@@ -61,7 +61,7 @@
 
 		var map = new google.maps.Map(document.getElementById('map'), {
 			zoom: 10,
-			center: {lat: 38.7188, lng: -9.3315}
+			center: {lat: 38.6598, lng: -9.2037}
 		});
         // Add some markers to the map.
         // Note: The code uses the JavaScript Array.prototype.map() method to
