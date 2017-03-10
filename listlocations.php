@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Show Locations</title>
+		<title>List Locations</title>
 		<link rel="icon" href="SSS.png" type="image/gif" sizes="16x16">
 	</head>
 	<body>
@@ -33,7 +33,7 @@
 						. '<td>', $rows['LATITUDE'], '</td>'
 						. '<td>', $rows['LONGITUDE'], '</td>'
 						. '<td>', $rows['DATA'], '</td>'
-						. '<td>', '<a href="showLocation.php?latitude='.$rows['LATITUDE'].'&longitude='.$rows['LONGITUDE'].'"> Mapa </a>', '</td>'
+						. '<td>', '<a href="showLocation.php?latitude='.$rows['LATITUDE'].'&longitude='.$rows['LONGITUDE'].'&forca='.$rows['FORCA'].'"> Mapa </a>', '</td>'
 						. '</tr>';
 			}
 			echo '</table>';
